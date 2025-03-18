@@ -7,6 +7,21 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
   $(function(){
     // ここに処理を記述
+    $('#button').on('click', function(){
+
+      const inputNum = $('#value').val();
+      const box = $('#box')
+
+      box.css({'background-color' : ''}) // 背景色を初期化
+
+      if (inputNum === '1' ){
+        box.css({'background-color' : 'red'})
+      } else if (inputNum === '2'){
+        box.css({'background-color' : 'lime'})
+      } else if (inputNum === '3'){
+        box.css({'background-color' : 'blue'})
+      }
+    });
   });
   </script>
 </head>
